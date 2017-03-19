@@ -1,0 +1,46 @@
+{
+  "name": "webpack-modular",
+  "version": "1.0.0",
+  "description": "A scaffold project to demonstrate modular, simple and efficient use of webpack and npm in a frontend project",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node tasks.js",
+    "build": "node tasks.js",
+    "test": "node tasks.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IdanCo/webpack-modular.git"
+  },
+  "keywords": [
+    "webpack",
+    "npm",
+    "frontend"
+  ],
+  "author": "Idan Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IdanCo/webpack-modular/issues"
+  },
+  "homepage": "https://github.com/IdanCo/webpack-modular#readme",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "ng-annotate-loader": "^0.2.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.14.1",
+    "webpack": "^2.2.1",
+    "webpack-config": "^7.0.0",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {
+    "webpack-cleanup-plugin": "^0.5.1"
+  }
+}
