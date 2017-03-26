@@ -19,7 +19,7 @@ switch (npmEvent) {
     buildDistFolder();
     break;
   default:
-    console.info('tasks.js must run via "npm run ..."');
+    console.info('tasks.js must run via "npm run ...". you tired running it directly, or ');
     break;
 }
 
