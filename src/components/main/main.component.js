@@ -4,7 +4,7 @@ import MainTemplate from './main.html';
 // Set up controller
 class MainController {
   constructor() {
-    this.text = 'My main component!';
+    this.text = 'Bootstrap is on!';
   }
 }
 
