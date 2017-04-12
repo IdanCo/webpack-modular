@@ -21,6 +21,18 @@ module.exports = new WebpackConfig().merge({
   module: {
     rules: [
       {
+        test: /\.(css)$/,
+        loaders: ExtractTextPlugin.extract({
+          fallback: 'style-loader', // in case the ExtractTextPlugin is disabled, inject CSS to <HEAD>
+          use: [{
+            loader: 'css-loader', // translates CSS into CommonJS modules
+            options: {
+              sourceMap: true
+            }
+          }]
+        })
+      },
+      {
         test: /\.(scss)$/,
         loaders: ExtractTextPlugin.extract({
           fallback: 'style-loader', // in case the ExtractTextPlugin is disabled, inject CSS to <HEAD>
