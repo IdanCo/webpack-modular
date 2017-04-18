@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/IdanCo/webpack-modular#readme",
   "dependencies": {
-    "angular": "^1.6.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

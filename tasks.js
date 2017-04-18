@@ -4,9 +4,6 @@ const webpackConfig = require('./webpack.config.js');
 // webpack development server
 const WebpackDevServer = require('webpack-dev-server');
 
-// load project's configurations
-const conf = require('./conf/conf');
-
 // Set the event based on the npm script that is running (start, build, test, etc.)
 const npmEvent = process.env.npm_lifecycle_event;
 
@@ -14,9 +11,6 @@ const npmEvent = process.env.npm_lifecycle_event;
 switch (npmEvent) {
   case 'serve':
     startDevelopmentServer();
-    break;
-  case 'build':
-    buildDistFolder();
     break;
   default:
     console.info('tasks.js must run via "npm run ...". you tired running it directly, or ');
@@ -33,17 +27,3 @@ function startDevelopmentServer() {
 
   server.listen('8080', 'localhost', () => console.log(`WebpackDevServer running on port 8080`));
 }
-
-// method to build static webapp
-function buildDistFolder() {
-  const compiler = webpack(webpackConfig);
-
-  compiler.run((err, stats) => {
-    if (err || stats.hasErrors()) {
-      console.info(err);
-    }
-    console.info('dist build finished');
-  });
-}
-
-
