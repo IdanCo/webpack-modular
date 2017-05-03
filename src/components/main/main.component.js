@@ -3,8 +3,13 @@ import MainTemplate from './main.html';
 
 // Set up controller
 class MainController {
-  constructor() {
-    this.text = 'My main component!';
+  constructor($element) {
+    this.text = 'Angular ' + angular.version.full + ' is working!';
+    this.$element = $element;
+  }
+
+  $onInit() {
+    this.$element.find('.test-jquery').text('jQuery ' + $.fn.jquery + ' is working!');
   }
 }
 

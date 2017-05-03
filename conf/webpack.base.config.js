@@ -11,7 +11,8 @@ module.exports = new WebpackConfig().merge({
       `./${conf.path.src('index')}`
     ],
     vendor: [
-      'angular'
+      'angular',
+      'jquery'
     ]
   },
   output: {
@@ -66,6 +67,9 @@ module.exports = new WebpackConfig().merge({
   },
   plugins: [
     new webpack.ProvidePlugin({ // inject ES5 modules as global vars
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
     }),
     new HtmlWebpackPlugin({ // inject styles and js to index.html
       template: conf.path.src('index.html')

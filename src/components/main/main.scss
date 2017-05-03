@@ -1,3 +1,4 @@
-.main {
-  color: blue;
+.main::after {
+  display: block;
+  content: 'SASS is working!'
 }
