@@ -1,4 +1,4 @@
-# webpack-modular
+# webpack-modular _with bootstrap 4_
 
 A scaffold of a frontend project which implements some of the best practices to harnest the powers of [webpack 2](https://webpack.js.org/). The app itself is based on [AngularJS](https://angularjs.org/), but most aspects of the bundling process are relevant to any stack.
 
