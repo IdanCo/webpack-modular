@@ -14,7 +14,6 @@ module.exports = new WebpackConfig()
     plugins: [
       new webpack.HotModuleReplacementPlugin(), // enable hot module replacement
       new webpack.NamedModulesPlugin(), // add names to modules
-
       new ExtractTextPlugin({ // no need for separate css files in dev
         disable: true
       })

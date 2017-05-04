@@ -13,6 +13,9 @@ class MainController {
   }
 }
 
+// annotate injections
+MainController.$inject = ['$element'];
+
 // Define and export component
 export default {
   template: MainTemplate,

@@ -55,8 +55,6 @@ module.exports = new WebpackConfig().merge({
         test: /\.js$/,
         exclude: /node_modules/,
         use: [{
-          loader: 'ng-annotate-loader' // handle AngularJS dependency injection
-        }, {
           loader: 'babel-loader', // transpile to ES5
           options: {
             presets: ['es2015']
