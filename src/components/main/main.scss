@@ -2,3 +2,7 @@
   display: block;
   content: 'SASS is working!'
 }
+
+.test-bootstrap {
+  display: none; // this should be overridden by bootstrap
+}

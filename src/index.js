@@ -9,7 +9,6 @@ import 'bootstrap';
 // Import Bootstrap's compiled CSS:
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 // import general styling (including bootstrap):
 import './index.scss'
 

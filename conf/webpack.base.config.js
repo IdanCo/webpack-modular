@@ -12,7 +12,8 @@ module.exports = new WebpackConfig().merge({
     ],
     vendor: [
       'angular',
-      'jquery'
+      'jquery',
+      'bootstrap'
     ]
   },
   output: {
