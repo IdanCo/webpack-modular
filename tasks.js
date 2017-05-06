@@ -18,6 +18,9 @@ switch (npmEvent) {
   case 'build':
     buildDistFolder();
     break;
+  case 'library':
+    buildLibrary();
+    break;
   default:
     console.info('tasks.js must run via "npm run ...". you tired running it directly, or ');
     break;
@@ -43,6 +46,21 @@ function buildDistFolder() {
       console.info(err);
     }
     console.info('dist build finished');
+  });
+}
+
+// method to build stand-alone library
+function buildLibrary() {
+  console.info(webpackConfig);
+
+  const compiler = webpack(webpackConfig);
+
+  compiler.run((err, stats) => {
+    if (err || stats.hasErrors()) {
+      console.info(stats);
+      console.info(err);
+    }
+    console.info('library build finished');
   });
 }
 

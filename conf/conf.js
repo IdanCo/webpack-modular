@@ -9,6 +9,9 @@ const path = require('path');
 // default port for development server
 exports.servePort = 8080;
 
+// library name
+exports.libraryName = 'library';
+
 // list of paths in project
 exports.paths = {
   src: 'src',

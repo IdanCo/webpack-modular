@@ -1,11 +1,12 @@
 {
-  "name": "webpack-modular",
+  "name": "my-library",
   "version": "1.0.0",
   "description": "A scaffold project to demonstrate modular, simple and efficient use of webpack and npm in a frontend project",
-  "main": "index.js",
+  "main": "library/library.js",
   "scripts": {
     "serve": "node tasks.js",
-    "build": "node tasks.js"
+    "build": "node tasks.js",
+    "library": "node tasks.js"
   },
   "repository": {
     "type": "git",

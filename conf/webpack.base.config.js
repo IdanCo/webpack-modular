@@ -72,8 +72,8 @@ module.exports = new WebpackConfig().merge({
     new HtmlWebpackPlugin({ // inject styles and js to index.html
       template: conf.path.src('index.html')
     }),
-    new webpack.optimize.CommonsChunkPlugin({ // seperate vendor chunks
-      name: ['vendor', 'manifest']
-    }),
+    // new webpack.optimize.CommonsChunkPlugin({ // seperate vendor chunks
+    //   name: ['vendor', 'manifest']
+    // }),
   ],
 });
