@@ -1,6 +1,6 @@
 // Import Template
 import MainTemplate from './main.html';
-import * as library from '../../library';
+import library from '../../library';
 
 // Set up controller
 class MainController {
@@ -11,7 +11,7 @@ class MainController {
 
   $onInit() {
     this.$element.find('.test-jquery').text('jQuery ' + $.fn.jquery + ' is working!');
-    console.info(library.doSomething());
+    console.info(library(this.$element).doSomething());
   }
 }
 

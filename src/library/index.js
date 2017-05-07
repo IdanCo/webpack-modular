@@ -11,10 +11,36 @@
 //
 // export { library };
 
-import { doSomething } from './feature';
+// this is working!!!!
+// import { doSomething, doSomethingElse } from './features';
+//
+// export {
+//   doSomething,
+//   doSomethingElse
+// };
 
-const library = {
-  doSomething
+import { doSomething, doSomethingElse } from './features';
+
+function init() {
+  console.info('initing');
+}
+
+init();
+
+class library {
+  constructor(element) {
+    this.element = element;
+  }
+
+
+
+  doSomething() {
+    console.info(this.element);
+    // this.element.find('.test-library').text('boom!');
+    return doSomething();
+  }
+}
+
+module.exports = (element) => {
+  return new library (element);
 };
-
-export { doSomething };
