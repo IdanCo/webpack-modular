@@ -10,6 +10,9 @@ class MainController {
 
   $onInit() {
     this.$element.find('.test-jquery').text('jQuery ' + $.fn.jquery + ' is working!');
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
   }
 }
 

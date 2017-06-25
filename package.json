@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/IdanCo/webpack-modular#readme",
   "dependencies": {
-    "angular": "^1.6.3"
+    "angular": "^1.6.3",
+    "bootstrap": "https://github.com/twbs/bootstrap.git#ffca50924eb519fe62bccf30c9d899c12eaf887c"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
