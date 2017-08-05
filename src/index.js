@@ -5,7 +5,8 @@ import angular from 'angular';
 
 // import Bootstrap's compiled javascript:
 import 'bootstrap';
-
+import ng1bs4 from 'ng1bs4';
+import 'ng1bs4/dist/ng1bs4.css'
 // import general styling (including bootstrap):
 import './index.scss'
 
@@ -18,5 +19,6 @@ import ComponentsModule from './components/components.module';
 // Register app
 angular
   .module('app', [
-    ComponentsModule
+    ComponentsModule,
+    ng1bs4
   ]);

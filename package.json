@@ -24,6 +24,7 @@
   "homepage": "https://github.com/IdanCo/webpack-modular#readme",
   "dependencies": {
     "angular": "^1.6.3",
+    "ng1bs4": "0.0.4",
     "bootstrap": "^4.0.0-alpha.6"
   },
   "devDependencies": {

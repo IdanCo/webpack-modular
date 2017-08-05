@@ -53,18 +53,18 @@ module.exports = new WebpackConfig().merge({
         })
       },
       // in case you plan on using raw css files, add this rule:
-      // {
-      //   test: /\.(css)$/,
-      //   loaders: ExtractTextPlugin.extract({
-      //     fallback: 'style-loader', // in case the ExtractTextPlugin is disabled, inject CSS to <HEAD>
-      //     use: [{
-      //       loader: 'css-loader', // translates CSS into CommonJS modules
-      //       options: {
-      //         sourceMap: true
-      //       }
-      //     }]
-      //   })
-      // },
+      {
+        test: /\.(css)$/,
+        loaders: ExtractTextPlugin.extract({
+          fallback: 'style-loader', // in case the ExtractTextPlugin is disabled, inject CSS to <HEAD>
+          use: [{
+            loader: 'css-loader', // translates CSS into CommonJS modules
+            options: {
+              sourceMap: true
+            }
+          }]
+        })
+      },
       {
         test: /.html$/,
         use: 'html-loader'
