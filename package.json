@@ -24,7 +24,8 @@
   "homepage": "https://github.com/IdanCo/webpack-modular#readme",
   "dependencies": {
     "angular": "^1.6.3",
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "4.0.0-beta",
+    "popper.js": "^1.11.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
