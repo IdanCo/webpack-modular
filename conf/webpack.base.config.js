@@ -65,6 +65,11 @@ module.exports = new WebpackConfig().merge({
       //     }]
       //   })
       // },
+      // Inline images:
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: 'url-loader'
+      },
       {
         test: /.html$/,
         use: 'html-loader'
