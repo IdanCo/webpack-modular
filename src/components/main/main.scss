@@ -66,4 +66,24 @@
     top: 50%;
     margin-top: -$timeline-marker-width / 2;
   }
+
+  .timeline>.row:first-child & {
+    height: 50%;
+    bottom: 0;
+
+    .timeline-marker {
+      top: 0;
+    }
+  }
+
+  .timeline>.row:last-child & {
+    height: 50%;
+    top: 0;
+
+    .timeline-marker {
+      bottom: -$timeline-marker-width / 2;
+      top: auto;
+    }
+  }
 }
+
