@@ -1,8 +1,22 @@
-<div class="main">
-    {{ $ctrl.text }}
-</div>
-<div class="test-jquery">
-</div>
-<div class="test-bootstrap d-block">
-    Bootstrap 4 is Working!
+
+
+<div class="timeline">
+    <div class="row justify-content-center" ng-repeat="event in $ctrl.events">
+        <div class="timeline-line">
+            <div class="timeline-marker">
+
+            </div>
+        </div>
+        <div class="timeline-inner col d-flex">
+            <div class="event-wrapper py-1">
+                <div class="event-image">
+                    <img ng-src="{{ event.image }}"/>
+                </div>
+                <div class="event-details">
+                    <div class="text-muted">{{ event.date }}</div>
+                    <h4>{{ event.title }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

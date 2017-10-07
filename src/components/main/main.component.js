@@ -9,7 +9,33 @@ class MainController {
   }
 
   $onInit() {
-    this.$element.find('.test-jquery').text('jQuery ' + $.fn.jquery + ' is working!');
+    this.events = [
+      {
+        date: 'October 6, 2010',
+        title: 'Something Happened',
+        image: 'https://unsplash.it/100'
+      },
+      {
+        date: 'October 6, 2010',
+        title: 'Something Happened',
+        image: 'https://unsplash.it/100'
+      },
+      {
+        date: 'October 6, 2010',
+        title: 'Something Happened',
+        image: 'https://unsplash.it/100'
+      },
+      {
+        date: 'October 6, 2010',
+        title: 'Something Happened',
+        image: 'https://unsplash.it/100'
+      },
+      {
+        date: 'October 6, 2010',
+        title: 'Something Happened',
+        image: 'https://unsplash.it/100'
+      }
+    ]
   }
 }
 

@@ -1,0 +1,11 @@
+@mixin odd {
+  .timeline>.row:nth-child(odd) & {
+    @content;
+  }
+}
+
+@mixin even {
+  .timeline>.row:nth-child(even) & {
+    @content;
+  }
+}

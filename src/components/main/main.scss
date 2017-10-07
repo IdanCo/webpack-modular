@@ -1,8 +1,69 @@
-.main::after {
-  display: block;
-  content: 'SASS is working!'
+@import "mixins";
+@import "variables";
+
+.timeline>.row {
+  position: relative;
+
+  &:nth-child(odd) {
+    background-color: $odd-color;
+  }
+  &:nth-child(even) {
+    background-color: $even-color;
+  }
 }
 
-.test-bootstrap {
-  display: none; // this should be overridden by bootstrap
+.timeline-inner {
+  max-width: 50%;
+  min-width: 960px;
+
+  @include odd {
+    flex-direction: row;
+  }
+  @include even {
+    flex-direction: row-reverse;
+  }
+}
+
+.event-image {
+  @include odd {
+    float: left;
+    padding-right: 5px;
+  }
+  @include even {
+    float: right;
+    padding-left: 5px;
+  }
+}
+
+.event-wrapper {
+  width: 45%;
+
+  @include odd {
+    text-align: left;
+  }
+  @include even {
+    text-align: right;
+  }
+}
+
+.timeline-line {
+  background: $timeline-color;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: $timeline-width;
+  height: 100%;
+
+  .timeline-marker {
+    border-radius: 50%;
+    position: absolute;
+    width: $timeline-marker-width;
+    height: $timeline-marker-width;
+    background: $timeline-color;
+    right: -($timeline-marker-width - $timeline-width)/2;
+    top: 50%;
+    margin-top: -$timeline-marker-width / 2;
+  }
 }
